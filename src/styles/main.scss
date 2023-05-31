@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,700;1,700&family=Jost:wght@400;500&display=swap');
+
+$green: #27300f;
+$orange: #d26a22;
+$white: #fff;
+
+$font-cormorant: 'Cormorant', sans-serif;
+$font-jost: 'Jost', sans-serif;
+
+$r_mob_320: 320px;
+$r_mob_360: 360px;
+$r_mob_400: 400px;
+$r_mob_500: 500px;
+$r_mob_600: 600px;
+$r_tab: 768px;
+$r_tab_900: 900px;
+$r_desk: 1000px;
+$r_desk_1120: 1120px;
+$r_desk_hd: 1200px;
+$r_desk_1280: 1280px;
+$r_desk_1350: 1350px;
+$r_desk_1450: 1450px;
+$r_desk_full_1750: 1750px;
+
+
+
+body {
+	background: url('../images/bg.png') 0 0 no-repeat;
+	background-size: contain;
+	overflow-x: hidden;
+	color: $green;
+	font-size: 1.6rem;
+	font-family: $font-jost;
+	font-size: 1.8rem;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	max-width: 1110px;
+	padding: 0px 15px;
+	margin: 0 auto;
+	box-sizing: content-box;
+}
+
+.page {
+	flex: 1 1 auto;
+}
