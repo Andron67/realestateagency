@@ -4,6 +4,7 @@ $font-inter: 'Inter', sans-serif;
 $font-opensans: 'Open Sans', sans-serif;
 
 $green: #4169e1;
+$grey: #EFEFEF;
 $black: #000000;
 $white: #fff;
 
@@ -62,6 +63,13 @@ a {
 	margin: -1px;
 }
 
+.section-title {
+	font-family: $font-opensans;
+	font-weight: 700;
+	font-size: 44px;
+	line-height: 60px;
+}
+
 .container {
 	max-width: 1220px;
 	padding: 0px 15px;
@@ -83,6 +91,10 @@ a {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+	}
+
+	&-menu {
+		margin-top: 34px;	 
 	}
 
 	&-menu__list {
@@ -124,15 +136,15 @@ a {
 
 .page-main {
 	background-color: $green;
-	display: flex;
-	justify-content: space-between;
+	position: relative;
 	&__content {
+		padding: 185px 0 152px 0;
+		position: relative;
+		z-index: 30;
 		color: $white;
-		margin: 185px 45px 152px auto;
 		width: 565px;
 		&-title {
 			display: block;
-			margin: 0;
 			font-family: $font-inter;
 			font-size: 52px;
 			font-weight: 800;
@@ -151,6 +163,57 @@ a {
 		&-text span {
 			font-weight: 800;
 		}
+	}
+	&__cover {
+		position: absolute;
+		top: 0;
+		right: 0;
+		max-width: 960px;
+	}
+	&__img {
+		width: 100%;
+	}
+}
+
+/*SERVICES*/
+.services {
+	margin-top: 100px;
+	&-subtitle {
+		font-family: $font-opensans;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 33px;
+		margin-bottom: 37px;
+	}
+
+	&-card__list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+
+	&-card__item {
+		background-color: $grey;
+		padding: 30px;
+		height: 268px;
+		&-content {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 100%;
+		}
+
+		&-img {
+			
+		}
+
+		&-link {
+			display: block;
+		}
+	}
+
+	&-card__item:nth-child(8) {
+		grid-column: 2/4;
 	}
 }
 
