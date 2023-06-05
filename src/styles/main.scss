@@ -4,6 +4,7 @@ $font-inter: 'Inter', sans-serif;
 $font-opensans: 'Open Sans', sans-serif;
 
 $green: #4169e1;
+$blue: #5AA7A3;
 $grey: #EFEFEF;
 $black: #091212;
 $white: #fff;
@@ -144,6 +145,8 @@ a {
 		color: $white;
 		width: 565px;
 		&-title {
+			padding-top: 43px;
+			margin: 0;
 			display: block;
 			font-family: $font-inter;
 			font-size: 52px;
@@ -177,7 +180,7 @@ a {
 
 /*SERVICES*/
 .services {
-	margin-top: 100px;
+	margin: 100px 0px 100px 0px;
 	&-subtitle {
 		font-family: $font-opensans;
 		font-weight: 400;
@@ -223,12 +226,59 @@ a {
 	}
 }
 
-
-
-
-
 .footer {
 	width: 100%;
-	background-color: #4169e1;
+	background-color: $blue;
+	&-container {
+		padding: 100px 0 100px 0;
+	}
+	&-content {
+		margin-top: 32px;
+		display: flex;
+	}
+	&-contacts {
+		margin-right: 300px;
+	}
+	&-item {
+		&__contacts:not(:last-child) {
+			margin-bottom: 20px;
+		}
+		&__tel-link {
+			color: $white;
+			font-family: $font-opensans;
+			font-weight: 700;
+			font-size: 32px;
+			line-height: 44px;
+		}
+		&__social {
+			display: flex;
+			gap: 20px;
+		}
+		&__address-link {
+			color: rgba($white, .8);
+			font-style: inherit;
+			font-family: $font-opensans;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 32px;
+		}
+	}
+	&-about {
+		&__title {
+			color: $white;
+			margin-bottom: 20px;
+			font-family: 'Open Sans';
+			font-weight: 600;
+			font-size: 22px;
+			line-height: 32px;
+		}
+		&__item {
+			color: rgba($white, .8);
+			font-family: 'Open Sans';
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 32px;
+		}
+	}
 }
 
