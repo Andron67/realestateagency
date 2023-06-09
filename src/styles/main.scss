@@ -6,6 +6,7 @@ $font-opensans: 'Open Sans', sans-serif;
 $green: #4169e1;
 $blue: #5AA7A3;
 $grey: #EFEFEF;
+$greycont: #B0B0B0;
 $black: #091212;
 $white: #fff;
 
@@ -226,6 +227,54 @@ a {
 	}
 }
 
+/*CONTACTS*/
+.contacts {
+	margin-bottom: 100px;
+	&-list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 340px);
+		gap: 20px;
+	}
+	&-item {
+		border: 1px solid $greycont;
+		padding: 40px 50px;
+		display: flex;
+		flex-direction: column;
+		&__address {
+			grid-row: 1/3;
+		}
+		&__header {
+			flex-grow: 1;
+		}
+		&__title {
+			margin-bottom: 20px;
+		}
+		&__calling {
+			width: 300px;
+			font-family: $font-opensans;
+			font-style: inherit;
+			font-weight: 600;
+			font-size: 28px;
+			line-height: 38px;
+		}
+		&__text-block {
+			margin-bottom: 40px;
+			width: 220px;
+		}
+	}
+	&-address {
+		margin-bottom: 40px;
+	}
+	&-text {
+		color: $black;
+		font-family: $font-opensans;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 32px;
+	}
+}
+/*FOOTER*/	
 .footer {
 	width: 100%;
 	background-color: $blue;
