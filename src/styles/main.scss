@@ -227,6 +227,48 @@ a {
 	}
 }
 
+/*ADVANTAGES*/
+.advantages {
+	margin-bottom: 40px;
+	&-list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 10px;
+	}
+	&-item {
+		position: relative;
+		padding-top: 60px;
+		padding-left: 50px;
+		&__content {
+			max-width: 500px;
+		}
+		&__title {
+			color: $black;
+			padding-bottom: 16px;
+			font-family: 'Open Sans';
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 33px;
+		}
+		&__text {
+			color: $black;
+			font-family: 'Open Sans';
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 27px;
+		}
+		&::before {
+			width: 30px;
+			height: 30px;
+			content: '';
+			background: url('../images/advantjackdaw.svg') no-repeat;
+			position: absolute;
+			top: 63px;
+			left: 0;
+		}		
+	}
+}
+
 /*OURTEAM*/
 .ourteam {
 	margin-bottom: 100px;
