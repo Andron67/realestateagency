@@ -227,6 +227,99 @@ a {
 	}
 }
 
+/*OURTEAM*/
+.ourteam {
+	margin-bottom: 100px;
+	&-cards {
+		margin-top: 65px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+	}
+	&-card {
+		background-color: $grey;
+		display: flex;
+		max-width: 600px;
+		&__cover {
+			width: 270px;
+			height: 369px;
+			position: relative;
+			overflow: hidden;
+			&__img {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				object-fit: cover;
+			}
+		}
+		&__content {
+			display: flex;
+			padding: 30px;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: flex-start;
+			&-name {
+				width: 250px;
+			}
+			&-title {
+				color: $black;
+				font-family: 'Open Sans';
+				font-weight: 700;
+				font-size: 24px;
+				line-height: 32px;
+				margin-bottom: 10px;
+			}
+			&-subtitle {
+				color: rgba($black, .8);
+				font-family: 'Open Sans';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 27px;
+			}
+			&-calling {
+				padding-left: 40px;
+			}
+			&-text {
+				display: block;
+				color: $black;
+				font-family: 'Open Sans';
+				font-weight: 600;
+				font-size: 18px;
+				line-height: 32px;
+				position: relative;
+			}
+			&-mail {
+				position: relative;
+				margin-bottom: 10px;
+			}
+			&-mail::before {
+				width: 26px;
+				height: 26px;
+				content: '';
+				background: url('../images/ourteam/ourteammail.svg') no-repeat;
+				position: absolute;
+				top: 5px;
+				left: -30px;
+			}
+			&-tel {
+				position: relative;
+			}
+			&-tel::before {
+				width: 26px;
+				height: 26px;
+				content: '';
+				background: url('../images/ourteam/ourteamtel.svg') no-repeat;
+				position: absolute;
+				top: 0px;
+				left: -30px;
+			}
+			
+		}
+	}
+}
+
 /*CONTACTS*/
 .contacts {
 	margin-bottom: 100px;
