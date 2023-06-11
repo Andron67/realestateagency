@@ -18,9 +18,14 @@ module.exports = ({develop}) => ({
     filename: 'bundle.js',
     clean: true,
   },
-  plugins: [
+   plugins: [
       new HtmlWebpackPlugin({
-          template: './src/index.html'
+			filename: "index.html",
+         template: './src/index.html',
+      }),
+		new HtmlWebpackPlugin({
+			filename: "secondary.html",
+         template: './src/secondary.html',
       }),
       new MiniCssExtractPlugin({
           filename: './styles/main.css'
