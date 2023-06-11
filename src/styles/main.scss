@@ -502,3 +502,58 @@ a {
 	}
 }
 
+/* SECONDARY.HTML */
+.ouractions {
+	margin-top: 200px;
+	&-container {
+		padding: 40px 50px;
+		display: flex;
+		gap: 50px;
+	}
+	&-left__block {
+		max-width: 540px;
+	}
+	&-title {
+		position: relative;
+		font-family: $font-inter;
+		font-weight: 700;
+		font-size: 38px;
+		line-height: 145.52%;
+	}
+	&-title::after {
+		width: 490px;
+		height: 25px;
+		content: '';
+		background: url('../images/decorunderline.svg') no-repeat;
+		position: absolute;
+		bottom: 0px;
+		right: 25px;
+		z-index: -20;
+	}
+	&-right__block {
+		max-width: 480px;
+	}
+	&-right__item {
+		position: relative;
+	}
+	&-right__item:not(:last-child) {
+		margin-bottom: 40px;
+	}
+	&-right__item::before {
+		width: 8px;
+		height: 8px;
+		background-color: $black;
+		border-radius: 100%;
+		content: '';
+		position: absolute;
+		top: 6px;
+		left: -30px;
+	}
+	&-right__text {
+		font-family: $font-inter;
+      font-weight: 400;
+      font-size: 18px;
+		line-height: 28px;
+	}
+}
+
