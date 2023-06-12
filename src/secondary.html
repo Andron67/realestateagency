@@ -163,6 +163,52 @@
 					</ul>
 				</div>
 			</section>
+			<section class="feedback">
+				<div class="feedback-container container">
+					<h2 class="feedback-title"></h2>
+					<div class="feedback-form">
+						<div class="feedback-form__left-block">
+							<h3 class="feedback-form__title">Получить бесплатную консультацию</h3>
+						</div>
+						<div class="feedback-form__right-block">
+							<form class="feedback-form__inner" action="#" method="post">
+								<div class="feedback-form__item">
+									<label class="feedback-form__label" for="rooms">Количество комнат</label>
+									<select class="feedback-form__link" id="rooms" name="rooms" required>
+										<option value="choice">Выберете</option>
+										<option value="oneroom">1-комнатные</option>
+										<option value="tworoom">2-комнатные</option>
+										<option value="threeroom">3-комнатные</option>
+										<option value="fourroom">4-комнатные</option>
+										<option value="fiveroom">5-комнатные</option>
+									</select>
+								</div>
+								<div class="feedback-form__item">
+									<label class="feedback-form__label" for="formpayment">Форма оплаты</label>
+									<select class="feedback-form__link" id="formpayment" name="formpayment" required>
+										<option value="choice">Выберете</option>
+										<option value="cash">Наличные</option>
+										<option value="noncash">Безналичные</option>
+									</select>
+								</div>
+								<div class="feedback-form__item">
+									<label class="feedback-form__label" for="name">Ваше имя</label>
+									<input class="feedback-form__link" type="text" id="name" placeholder="Имя" required>
+								</div>
+								<div class="feedback-form__item">
+									<label class="feedback-form__label" for="phone">Телефон для связи</label>
+									<input class="feedback-form__link" type="tel" id="phone" placeholder="Напишите ваше имя" required>
+								</div>
+								<div class="feedback-form__check">
+									<input class="visually-hidden" type="checkbox" name="consent" checked>
+									<span class="control-mark"></span>
+									<p class="control-label">Я согласен на <span>обработку персональных данных</span></p>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
 			<section class="services">
 				<div class="services-container container">
 					<div class="services-header">
