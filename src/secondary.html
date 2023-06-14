@@ -165,17 +165,17 @@
 			</section>
 			<section class="feedback">
 				<div class="feedback-container container">
-					<h2 class="feedback-title"></h2>
+					<div class="feedback-form__left-block">
+						<h2 class="feedback-form__title">Получить бесплатную консультацию</h2>
+					</div>
 					<div class="feedback-form">
-						<div class="feedback-form__left-block">
-							<h3 class="feedback-form__title">Получить бесплатную консультацию</h3>
-						</div>
-						<div class="feedback-form__right-block">
+						<div class="feedback-form__background"></div>
+							<h3 class="feedback-form__title">Укажите свои контакты</h3>
 							<form class="feedback-form__inner" action="#" method="post">
 								<div class="feedback-form__item">
 									<label class="feedback-form__label" for="rooms">Количество комнат</label>
 									<select class="feedback-form__link" id="rooms" name="rooms" required>
-										<option value="choice">Выберете</option>
+										<option value="">Выберете</option>
 										<option value="oneroom">1-комнатные</option>
 										<option value="tworoom">2-комнатные</option>
 										<option value="threeroom">3-комнатные</option>
@@ -186,7 +186,7 @@
 								<div class="feedback-form__item">
 									<label class="feedback-form__label" for="formpayment">Форма оплаты</label>
 									<select class="feedback-form__link" id="formpayment" name="formpayment" required>
-										<option value="choice">Выберете</option>
+										<option value="">Выберете</option>
 										<option value="cash">Наличные</option>
 										<option value="noncash">Безналичные</option>
 									</select>
@@ -204,8 +204,9 @@
 									<span class="control-mark"></span>
 									<p class="control-label">Я согласен на <span>обработку персональных данных</span></p>
 								</div>
+								<button class="feedback-form__btn" type="submit">Получить бесплатную консультацию</button>
 							</form>
-						</div>
+						
 					</div>
 				</div>
 			</section>
@@ -429,7 +430,9 @@
 						</li>
 					</ul>
 					<ul class="footer-about">
-						<h3 class="footer-about__title ">О нас</h3>
+						<li class="footer-about__item ">
+							<h3 class="footer-about__title">О нас</h3> 
+						</li>
 						<li class="footer-about__item">ООО «Метры»</li>
 						<li class="footer-about__item">ИНН 5190072786</li>
 						<li class="footer-about__item">КПП 519001001</li>

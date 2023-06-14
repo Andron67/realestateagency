@@ -5,8 +5,8 @@ $font-opensans: 'Open Sans', sans-serif;
 
 $green: #4169e1;
 $blue: #5AA7A3;
-$grey: #EFEFEF;
-$greycont: #B0B0B0;
+$grey: #efefef;
+$greycont: #b0b0b0;
 $black: #091212;
 $white: #fff;
 
@@ -598,5 +598,18 @@ a {
 	}
 }
 
-/* OFFERS */
+/* FEEDBACK */
+.feedback {
+	margin-top: 114px;
+	&-container {
+		background-color: $grey;
+		display: flex;
+	}
+	&-form {
+		&__left-block {
+			max-width: 530px;
+			padding: 50px 0px 0px 65px;
+		}
+	}
+}
 
