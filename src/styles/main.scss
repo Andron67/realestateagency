@@ -522,6 +522,7 @@ a {
 		font-weight: 700;
 		font-size: 38px;
 		line-height: 145.52%;
+		z-index: 20;
 	}
 	&-title::after {
 		width: 490px;
@@ -531,7 +532,7 @@ a {
 		position: absolute;
 		bottom: 0px;
 		right: 25px;
-		z-index: -20;
+		z-index: -10;
 	}
 	&-right__block {
 		max-width: 480px;
@@ -605,10 +606,27 @@ a {
 		background-color: $grey;
 		display: flex;
 	}
-	&-form {
-		&__left-block {
-			max-width: 530px;
-			padding: 50px 0px 0px 65px;
+	&__left-block {
+		max-width: 530px;
+		padding: 50px 0px 0px 65px;
+	}
+	&__left-title {
+		position: relative;
+		color: $black;
+		font-family: $font-inter;
+		font-weight: 700;
+		font-size: 38px;
+		line-height: 145.52%;
+		z-index: 20;
+		&::before {
+			width: 245px;
+			height: 30px;
+			content: '';
+			background: url('../images/feedbackuderline.svg') no-repeat;
+			position: absolute;
+			top: 20px;
+			right: 40px;
+			z-index: -10;
 		}
 	}
 }
